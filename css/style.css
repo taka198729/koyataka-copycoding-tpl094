@@ -1,0 +1,286 @@
+@charset "UTF-8";
+body {
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  overflow-x: hidden;
+  color: white;
+  font: 300 14px / 1.9 "Noto Sans JP", Arial, Verdana, 游ゴシック, YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  background: black;
+}
+
+a {
+  font-family: 'Modern Antiqua', 'Noto Sans JP', serif;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2 {
+  font-family: 'Modern Antiqua', 'Noto Sans JP', serif;
+}
+
+header {
+  text-align: center;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  background-color: black;
+}
+
+header .header-cover {
+  text-align: center;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  background-color: black;
+  z-index: 1000;
+}
+
+header .drawer-btn {
+  position: absolute;
+  right: 18px;
+  top: 16px;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  opacity: 0;
+  z-index: 2000;
+}
+
+header .drawer-btn:checked ~ .header-nav {
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header a {
+  color: #fff;
+}
+
+header .header-logo {
+  width: 87px;
+  height: 22.42px;
+  padding-top: 15px;
+}
+
+header .fa-bars {
+  padding: 20px 20px 0 0;
+  float: right;
+}
+
+header .header-nav {
+  background-color: black;
+  text-align: left;
+  -webkit-transform: translateY(-110%);
+          transform: translateY(-110%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+header .header-nav .header-menu li {
+  padding: 18px 0;
+  border-bottom: 1px solid #fff;
+}
+
+header .header-nav .header-menu li a:hover {
+  text-decoration: underline;
+}
+
+header .header-nav .header-menu li a .fas {
+  padding: 0 10px;
+}
+
+header .header-nav .header-sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #fff;
+  padding-top: 15px;
+}
+
+header .header-nav .header-sns li {
+  padding: 0px 10px;
+}
+
+.sidebar {
+  width: 20%;
+  position: fixed;
+  right: 0;
+  height: 100%;
+}
+
+.sidebar .sidebar-contents {
+  padding-left: 20%;
+}
+
+.sidebar .sidebar-contents .side-logo {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.sidebar .sidebar-contents .side-category {
+  padding-bottom: 50px;
+}
+
+.sidebar .sidebar-contents .side-category li {
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.sidebar .sidebar-contents .side-category li a {
+  color: #fff;
+}
+
+.sidebar .sidebar-contents .side-category li a:hover {
+  text-decoration: underline;
+}
+
+.sidebar .sidebar-contents .sns li {
+  padding: 10px 10px 10px 0;
+  display: inline-block;
+}
+
+.sidebar .sidebar-contents .sns li a:hover {
+  opacity: 0.5;
+}
+
+main {
+  width: 80%;
+}
+
+main .main-image {
+  width: 100%;
+}
+
+main .sec01,
+main .sec03,
+main .sec04,
+main .sec05,
+main footer {
+  margin: 0 auto;
+  text-align: center;
+}
+
+main .sec01 .heading,
+main .sec03 .heading,
+main .sec04 .heading,
+main .sec05 .heading,
+main footer .heading {
+  font-size: 22px;
+  padding: 60px 0 10px 0;
+  margin-bottom: 58px;
+  border-bottom: 3px solid #fff;
+  display: inline-block;
+}
+
+main .sec01 {
+  width: 60%;
+}
+
+main .sec01 p {
+  text-align: left;
+  padding-bottom: 88px;
+}
+
+main .sec02 img {
+  width: 33.3%;
+  vertical-align: bottom;
+}
+
+main .sec02 span img {
+  width: 100%;
+}
+
+main .sec03 {
+  width: 80%;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 50px;
+}
+
+main .sec03 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .sec03 ul li {
+  width: 18%;
+  padding: 0 3%;
+  text-align: left;
+}
+
+main .sec03 ul li img {
+  max-width: 100%;
+  width: 168px;
+  height: auto;
+}
+
+main .sec04 {
+  width: 80%;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 50px;
+}
+
+main .sec04 ul li {
+  padding: 0 3% 140px 0;
+  text-align: left;
+}
+
+main .sec04 ul li img {
+  float: left;
+  max-width: 100%;
+  width: 370px;
+  height: 224px;
+  padding-right: 20px;
+}
+
+main .sec05 {
+  width: 80%;
+  padding-bottom: 455px;
+  text-align: center;
+}
+
+main .sec05 .company-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+main .sec05 .company-contents p {
+  padding-right: 228px;
+}
+
+main .sec05 .company-contents .ggmap {
+  width: 60%;
+  position: relative;
+}
+
+main .sec05 .company-contents .ggmap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+main footer {
+  padding-bottom: 60px;
+  font-size: 12px;
+}
+
+main footer a {
+  color: blue;
+}
+
+main footer a:hover {
+  border-bottom: 1px solid #fff;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,53 @@
+@media (max-width: 782px) {
+  .sidebar {
+    display: none;
+  }
+  main {
+    width: 100%;
+  }
+}
+
+@media (min-width: 782px) {
+  header {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  main .sec02 img {
+    width: 100%;
+  }
+  main .sec03 ul {
+    display: block;
+  }
+  main .sec03 ul li {
+    width: 100%;
+    text-align: center;
+    padding: 0 0 50px 0;
+  }
+  main .sec03 ul li img {
+    width: 35%;
+  }
+  main .sec04 ul li {
+    padding-bottom: 60px;
+  }
+  main .sec04 ul li img {
+    float: none;
+    padding-bottom: 20px;
+  }
+  main .sec05 .company-contents {
+    display: block;
+  }
+  main .sec05 .company-contents p {
+    padding-bottom: 40px;
+  }
+  main .sec05 .company-contents .ggmap {
+    width: 95%;
+    padding-bottom: 80%;
+    margin: 0 auto;
+  }
+  main footer {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
